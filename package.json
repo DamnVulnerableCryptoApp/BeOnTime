@@ -1,0 +1,29 @@
+{
+  "name": "be-on-time",
+  "version": "0.0.1",
+  "main": "dist/BeOnTIme.js",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "start": "node './dist/BeOnTIme.js'",
+    "start:dev": "ts-node src/BeOnTime.ts -w dict.txt -r req.txt",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "author": "Luis Fontes",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.11.2",
+    "axios": "^0.20.0",
+    "raw-request-parser": "^1.0.7",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "yargs": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/yargs": "^15.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0"
+  },
+  "description": ""
+}
